@@ -1,0 +1,36 @@
+To create a database 
+use database-name
+-----------------------
+to delete 
+db.dropDatabase()
+-----------------------
+entity:trainer
+id,name,locations,technology,phone_number
+------------------------
+how to insert values
+trainer_db> db.trainer_db.insertOne({
+|   "name": "ram",
+|   "location": "mysuru",
+|   "technology": "mern",
+|   "phonenumber": "9858594044"
+| })
+------------------------
+to display the data
+db.trainer_db.find()
+------------------------
+to insert multiple values 
+db.trainer_db.insertMany([
+{
+values
+}
+])
+--------------------------
+to select particular data
+ db.trainer_db.find({"name":"ram
+--------------------------
+to update single data
+db.trainer_db.updateOne({"name":"ram"},{$set:{"location":"udupi"}})
+
+
+
+to update many
